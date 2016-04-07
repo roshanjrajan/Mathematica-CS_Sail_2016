@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    539139,       9076]
-NotebookOptionsPosition[    536663,       8999]
-NotebookOutlinePosition[    536999,       9014]
-CellTagsIndexPosition[    536956,       9011]
+NotebookDataLength[    540189,       9099]
+NotebookOptionsPosition[    537621,       9020]
+NotebookOutlinePosition[    537968,       9035]
+CellTagsIndexPosition[    537925,       9032]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -8807,44 +8807,33 @@ Cell[TextData[{
  "Note that two equals signs are used here. This is the boolean operator for \
 \[OpenCurlyDoubleQuote]is equaled to\[CloseCurlyDoubleQuote] as opposed to \
 the assignment operator.",
- StyleBox[" ",
-  FontSlant->"Italic"]
+ StyleBox[" \n",
+  FontSlant->"Italic"],
+ "\nYou can also solve differential equations! If you don\[CloseCurlyQuote]t \
+know what these are, don\[CloseCurlyQuote]t worry! Differential equations \
+have many real world applications, especiialy for modelling physical systems, \
+and you will no doubt see at least a few in college if you haven\
+\[CloseCurlyQuote]t already."
 }], "Text",
  CellChangeTimes->{{3.668287395888451*^9, 3.668287422202443*^9}, {
-   3.668976324195122*^9, 3.668976371900012*^9}, 3.66897643237982*^9}],
+   3.668976324195122*^9, 3.668976371900012*^9}, 3.66897643237982*^9, {
+   3.6690578176954947`*^9, 3.6690578945058966`*^9}}],
 
 Cell[BoxData[
- RowBox[{"N", "[", 
-  SqrtBox["20"], "]"}]], "Input",
- CellChangeTimes->{{3.668287425257189*^9, 3.668287448311306*^9}},
- Background->RGBColor[1, 0.925, 0.925]],
-
-Cell[TextData[{
- "As you can imagine, ",
- StyleBox["Mathematica",
-  FontSlant->"Italic"],
- " has got your basic functions covered, and ",
- StyleBox["a lot ",
-  FontWeight->"Bold"],
- "more. Here are some functions you\[CloseCurlyQuote]re probably already \
-familiar with"
-}], "Text",
- CellChangeTimes->{{3.6682876006929607`*^9, 3.668287631811792*^9}}],
-
-Cell[BoxData[
- RowBox[{"Sin", "[", 
-  FractionBox["\[Pi]", "4"], "]"}]], "Input",
+ RowBox[{"DSolve", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"y", "''"}], "[", "t", "]"}], "-", 
+     RowBox[{"4", " ", 
+      RowBox[{"y", "[", "t", "]"}]}]}], "\[Equal]", "0"}], ",", 
+   RowBox[{"y", "[", "t", "]"}], ",", " ", "t"}], "]"}]], "Input",
  CellChangeTimes->{{3.668287425257189*^9, 3.668287448311306*^9}, {
-  3.668287716666834*^9, 3.6682877307028418`*^9}},
- Background->RGBColor[1, 0.925, 0.925]],
-
-Cell[BoxData[
- RowBox[{"Sum", "[", 
-  RowBox[{"1", ",", "2", ",", "3", ",", "4", ",", "5"}], "]"}]], "Input",
- CellChangeTimes->{{3.668287425257189*^9, 3.668287448311306*^9}, {
-  3.668288202677766*^9, 3.6682882107827883`*^9}},
+  3.669057897487275*^9, 3.669057939633198*^9}, {3.669058034576937*^9, 
+  3.669058036285659*^9}},
  Background->RGBColor[1, 0.925, 0.925]]
-}, Open  ]],
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -8857,87 +8846,113 @@ Cell[TextData[StyleBox["Derivatives and Integrals",
  Background->RGBColor[1, 0.85, 0.85]],
 
 Cell[TextData[{
- "So let\[CloseCurlyQuote]s get down to business, and defeat... sorry, got a \
-little lost in song there.\nThere are plenty of useful functions in ",
+ "Here comes the bread and butter of calculus 1 and 2!\nFinding a derivative \
+is so common in mathematical applications that the function in ",
  StyleBox["Mathematica",
   FontSlant->"Italic"],
- " to use at your disposal! Here are some more to play around with:"
+ " has been simplified:"
 }], "Text",
  CellChangeTimes->{{3.668288362148683*^9, 3.6682883777886677`*^9}, {
   3.668288454720621*^9, 3.668288484084292*^9}, {3.668288575624894*^9, 
-  3.668288617095572*^9}, {3.668288674661071*^9, 3.668288702691008*^9}}],
+  3.668288617095572*^9}, {3.668288674661071*^9, 3.668288702691008*^9}, {
+  3.6690581059026995`*^9, 3.669058189999114*^9}}],
 
 Cell[BoxData[
- RowBox[{"Simplify", "[", 
+ RowBox[{"D", "[", 
   RowBox[{
-   RowBox[{"(", 
-    RowBox[{
-     RowBox[{"4", 
-      SuperscriptBox["x", "3"]}], "+", 
-     RowBox[{"5", 
-      SuperscriptBox["x", "2"]}], "+", "3"}], ")"}], "-", 
-   RowBox[{"3", 
-    RowBox[{"(", 
-     RowBox[{
-      RowBox[{"2", 
-       SuperscriptBox["x", "2"]}], "-", 
-      RowBox[{"6", "x"}], "+", "1"}], ")"}]}]}], "]"}]], "Input",
+   RowBox[{"x", "^", "2"}], ",", " ", "x"}], "]"}]], "Input",
  CellChangeTimes->{{3.668287425257189*^9, 3.668287448311306*^9}, {
-   3.668288202677766*^9, 3.6682882107827883`*^9}, 3.668288727626341*^9},
+   3.668288202677766*^9, 3.6682882107827883`*^9}, 3.668288727626341*^9, {
+   3.6690581479791527`*^9, 3.6690581483136997`*^9}, {3.669058192896009*^9, 
+   3.669058200510005*^9}},
  Background->RGBColor[1, 0.925, 0.925]],
 
-Cell[BoxData[
- RowBox[{"Expand", "[", 
-  SuperscriptBox[
-   RowBox[{"(", 
-    RowBox[{
-     RowBox[{"3", "x"}], "+", 
-     RowBox[{"2", "y"}]}], ")"}], "8"], "]"}]], "Input",
- CellChangeTimes->{{3.668287425257189*^9, 3.668287448311306*^9}, {
-   3.668288202677766*^9, 3.6682882107827883`*^9}, 3.668288736945611*^9},
- Background->RGBColor[1, 0.925, 0.925]],
+Cell[TextData[{
+ "Here\[CloseCurlyQuote]s a bonus feature. If you want to use ",
+ StyleBox["the most recent ",
+  FontWeight->"Bold"],
+ "executed solution, all you have to do is insert a % into your function:"
+}], "Text",
+ CellChangeTimes->{{3.669058258282508*^9, 3.6690582753142242`*^9}, {
+  3.6690583406466804`*^9, 3.669058392741054*^9}}],
 
 Cell[BoxData[
- RowBox[{
-  UnderoverscriptBox["\[Sum]", 
-   RowBox[{"k", "=", "1"}], "100"], 
-  FractionBox["1", 
-   SuperscriptBox["k", "2"]]}]], "Input",
+ RowBox[{"Integrate", "[", 
+  RowBox[{"%", ",", "x"}], "]"}]], "Input",
  CellChangeTimes->{{3.668287425257189*^9, 3.668287448311306*^9}, {
-   3.668288202677766*^9, 3.6682882107827883`*^9}, 3.6682888936121817`*^9},
- Background->RGBColor[1, 0.925, 0.925]],
-
-Cell[BoxData[
- RowBox[{"Plot", "[", 
-  RowBox[{
-   RowBox[{
-    RowBox[{"(", 
-     RowBox[{
-      SuperscriptBox["x", "3"], "-", 
-      RowBox[{"5", "x"}], "+", "2"}], ")"}], " ", 
-    RowBox[{"Sin", "[", "x", "]"}]}], ",", " ", 
-   RowBox[{"{", 
-    RowBox[{"x", ",", " ", 
-     RowBox[{"-", "3.5"}], ",", " ", "3.5"}], "}"}]}], "]"}]], "Input",
- CellChangeTimes->{{3.668287425257189*^9, 3.668287448311306*^9}, {
-  3.668288202677766*^9, 3.6682882107827883`*^9}, {3.6682887676666803`*^9, 
-  3.668288778088039*^9}},
+   3.668288202677766*^9, 3.6682882107827883`*^9}, 3.668288736945611*^9, {
+   3.669058396184009*^9, 3.6690584036724834`*^9}},
  Background->RGBColor[1, 0.925, 0.925]],
 
 Cell["\<\
-Let\[CloseCurlyQuote]s look more at what we can do with the plot function. \
-Once you excute the plot cell, you may notice a horizontal menu bar appear at \
-the bottom of the graph (if not, be sure to have selected the graph or \
-somewhere in the output cell. Here you have many options to customize the \
-appearance of your graph. Mess around with some options. Once your done, \
-click the swirl button next to \[OpenCurlyDoubleQuote]more...\
-\[CloseCurlyDoubleQuote] This will wrap up all of your step-by-step changes \
-into one cell, ultimately exchanging the original graph for something more \
-fitted to your needs.\
+If you want to re-use the same function later but for a different result, \
+just excute your desired answer then come back to the old function and \
+re-execute it! Execute the below derivative and integrate using the cell \
+above.\
 \>", "Text",
+ CellChangeTimes->{{3.669058417770852*^9, 3.669058500575177*^9}}],
+
+Cell[BoxData[
+ RowBox[{"D", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", 
+    RowBox[{"3", 
+     RowBox[{"x", "^", "3"}]}], "+", "x"}], ",", "x"}], "]"}]], "Input",
+ CellChangeTimes->{{3.668287425257189*^9, 3.668287448311306*^9}, {
+   3.668288202677766*^9, 3.6682882107827883`*^9}, 3.6682888936121817`*^9, {
+   3.6690585044441996`*^9, 3.6690585288282995`*^9}},
+ Background->RGBColor[1, 0.925, 0.925]],
+
+Cell[TextData[{
+ "For those who don\[CloseCurlyQuote]t like the look of having a function \
+name or something like \[OpenCurlyDoubleQuote]x^2\[CloseCurlyDoubleQuote] and \
+would rather have symbolic representation, simply highlight the function and \
+press \[OpenCurlyDoubleQuote]Shift+Ctrl+n\[CloseCurlyDoubleQuote] and ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " will replace it for you!\nSee what happens when you try this on the \
+following functions:"
+}], "Text",
  CellChangeTimes->{{3.6682890996981583`*^9, 3.668289112692595*^9}, {
-  3.6682892467388783`*^9, 3.668289415863841*^9}}]
-}, Closed]],
+  3.6682892467388783`*^9, 3.668289415863841*^9}, {3.6690586437586727`*^9, 
+  3.669058717902397*^9}, {3.6690587598088927`*^9, 3.6690587728181143`*^9}, {
+  3.6690588589077616`*^9, 3.669058872583022*^9}}],
+
+Cell[BoxData[{
+ RowBox[{"D", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", 
+    RowBox[{"3", 
+     RowBox[{"x", "^", "3"}]}], "+", "x"}], ",", "x"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Integrate", "[", 
+  RowBox[{"4", ",", "x"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Sqrt", "[", "81", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Plot", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"x", "^", "3"}], "/", "3"}], "+", 
+    RowBox[{
+     RowBox[{"x", "^", "2"}], "/", "2"}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", " ", 
+     RowBox[{"-", "5"}], ",", " ", "5"}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.668287425257189*^9, 3.668287448311306*^9}, {
+   3.668288202677766*^9, 3.6682882107827883`*^9}, 3.6682888936121817`*^9, {
+   3.6690585044441996`*^9, 3.6690585288282995`*^9}, {3.6690587851351843`*^9, 
+   3.669058806981028*^9}, {3.6690589191996803`*^9, 3.6690589420402117`*^9}},
+ Background->RGBColor[1, 0.925, 0.925]],
+
+Cell["\<\
+Some functions don\[CloseCurlyQuote]t have symbolic alternatives (like Plot), \
+but the shortcut command will still exchange what it can within the function\
+\[CloseCurlyQuote]s arguments.\
+\>", "Text",
+ CellChangeTimes->{{3.669058948728078*^9, 3.6690590045603523`*^9}}]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -8951,31 +8966,37 @@ Cell[TextData[StyleBox["Matrices",
  Background->RGBColor[1, 0.85, 0.85]],
 
 Cell[TextData[{
- "So you may have noticed some formatting or symbols within some of the input \
-cells up to now and wondering how to get them. There are keyboard shortcuts \
-for many, many options in ",
- StyleBox["Mathematica, ",
+ "Matrices can be used in many courses you will take in college, and just \
+like differential equations are useful for mapping many real-world situations \
+(like current flow through a circuit, or a curve of best fit for a graph).\n\
+Matrices are represented as lists of values behind the scenes within",
+ StyleBox[" Mathematica",
   FontSlant->"Italic"],
- "but we\[CloseCurlyQuote]ll save those for another day. The quick and easy \
-way is to use the given palettes. In the menu bar across the top of this \
-window, you\[CloseCurlyQuote]ll see \[OpenCurlyDoubleQuote]Palettes\
-\[CloseCurlyDoubleQuote] in between \[OpenCurlyDoubleQuote]Evaluation\
-\[CloseCurlyDoubleQuote] and \[OpenCurlyDoubleQuote]Window.\
-\[CloseCurlyDoubleQuote] Click it, and in the drop down menu select \
-\[OpenCurlyDoubleQuote]Classroom Assistant.\[CloseCurlyDoubleQuote] A new \
-window should open up with a vertical menu and the \
-\[OpenCurlyDoubleQuote]Calculator\[CloseCurlyDoubleQuote] tab already opened. \
-Here you can find many options for specific symbols, formatting, functions, \
-etc., much like you would find in the ribbon of your common word processor. \
-You will most likely find the Calculator\[CloseCurlyQuote]s \
-\[OpenCurlyDoubleQuote]Advanced\[CloseCurlyDoubleQuote] tab and \
-\[OpenCurlyDoubleQuote]Basic Commands\[CloseCurlyDoubleQuote] tab very useful \
-for your most common mathematical uses.\n"
+ ", you can see this by simply executing a matrix you already have:"
 }], "Text",
  CellChangeTimes->{{3.66828946141787*^9, 3.668289461705474*^9}, {
   3.668289507060931*^9, 3.668289669627604*^9}, {3.668289714201654*^9, 
-  3.6682899110133343`*^9}}]
-}, Closed]]
+  3.6682899110133343`*^9}, {3.6690590147206526`*^9, 3.669059103322135*^9}, {
+  3.669059152494567*^9, 3.669059229615141*^9}}],
+
+Cell[BoxData[
+ RowBox[{"(", GridBox[{
+    {"1", "2", "3"},
+    {"4", "5", "6"},
+    {"7", "8", "9"}
+   }], ")"}]], "Input",
+ CellChangeTimes->{{3.668287425257189*^9, 3.668287448311306*^9}, {
+   3.668288202677766*^9, 3.6682882107827883`*^9}, 3.6682888936121817`*^9, {
+   3.6690585044441996`*^9, 3.6690585288282995`*^9}, {3.669059232248468*^9, 
+   3.669059251192429*^9}},
+ Background->RGBColor[1, 0.925, 0.925]],
+
+Cell["\<\
+The solution cell shows a list of values seperated by brackets. As you can \
+see each inner group within the list represents a row of the matrix.\
+\>", "Text",
+ CellChangeTimes->{{3.6690592677825327`*^9, 3.6690593281068087`*^9}}]
+}, Open  ]]
 }, Open  ]],
 
 Cell[TextData[StyleBox["Teacher Examples", "Section"]], "Chapter",
@@ -8997,9 +9018,9 @@ Cell[TextData[StyleBox["Getting Help", "Section"]], "Chapter",
  Background->RGBColor[1, 0.9, 0.8]]
 }, Open  ]]
 },
-WindowSize->{1595, 811},
-WindowMargins->{{1727, Automatic}, {Automatic, 40}},
-FrontEndVersion->"10.2 for Linux x86 (64-bit) (July 6, 2015)",
+WindowSize->{1920, 997},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"10.4 for Microsoft Windows (64-bit) (February 25, 2016)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -9018,12 +9039,12 @@ Cell[580, 22, 739, 21, 156, "Title"],
 Cell[1322, 45, 515793, 8459, 448, 245694, 4030, "CachedBoxData", "BoxData", \
 "Input"],
 Cell[CellGroupData[{
-Cell[517140, 8508, 162, 2, 77, "Chapter"],
-Cell[517305, 8512, 591, 11, 33, "Text"],
+Cell[517140, 8508, 162, 2, 80, "Chapter"],
+Cell[517305, 8512, 591, 11, 30, "Text"],
 Cell[517899, 8525, 111, 1, 33, "WolframAlphaShort"],
-Cell[518013, 8528, 169, 2, 33, "Text"],
+Cell[518013, 8528, 169, 2, 30, "Text"],
 Cell[CellGroupData[{
-Cell[518207, 8534, 324, 9, 68, "Subchapter"],
+Cell[518207, 8534, 324, 9, 71, "Subchapter"],
 Cell[518534, 8545, 1500, 24, 121, "Text"],
 Cell[520037, 8571, 79, 2, 53, "Input"],
 Cell[520119, 8575, 299, 7, 33, "Text"],
@@ -9034,7 +9055,7 @@ Cell[521193, 8608, 238, 5, 69, "Input"],
 Cell[521434, 8615, 266, 5, 48, "Input"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[521737, 8625, 397, 9, 52, "Subchapter"],
+Cell[521737, 8625, 397, 9, 55, "Subchapter"],
 Cell[522137, 8636, 507, 9, 55, "Text"],
 Cell[522647, 8647, 574, 17, 51, "Input"],
 Cell[523224, 8666, 354, 9, 51, "Input"],
@@ -9043,43 +9064,44 @@ Cell[523920, 8687, 554, 15, 51, "Input"],
 Cell[524477, 8704, 763, 12, 77, "Text"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[525277, 8721, 401, 8, 52, "Subchapter"],
+Cell[525277, 8721, 401, 8, 55, "Subchapter"],
 Cell[525681, 8731, 1470, 24, 143, "Text"]
 }, Closed]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[527200, 8761, 224, 3, 77, "Chapter"],
-Cell[527427, 8766, 399, 7, 33, "Text"],
+Cell[527200, 8761, 224, 3, 80, "Chapter"],
+Cell[527427, 8766, 399, 7, 30, "Text"],
 Cell[CellGroupData[{
-Cell[527851, 8777, 290, 6, 68, "Subchapter"],
-Cell[528144, 8785, 556, 9, 33, "Text"],
-Cell[528703, 8796, 293, 7, 51, "Input"],
-Cell[528999, 8805, 385, 8, 33, "Text"],
-Cell[529387, 8815, 173, 4, 59, "Input"],
-Cell[529563, 8821, 350, 10, 33, "Text"],
-Cell[529916, 8833, 238, 5, 69, "Input"],
-Cell[530157, 8840, 266, 5, 48, "Input"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[530460, 8850, 353, 6, 68, "Subchapter"],
-Cell[530816, 8858, 507, 9, 55, "Text"],
-Cell[531326, 8869, 574, 17, 51, "Input"],
-Cell[531903, 8888, 354, 9, 51, "Input"],
-Cell[532260, 8899, 336, 8, 77, "Input"],
-Cell[532599, 8909, 554, 15, 51, "Input"],
-Cell[533156, 8926, 763, 12, 77, "Text"]
+Cell[527851, 8777, 290, 6, 71, "Subchapter"],
+Cell[528144, 8785, 556, 9, 30, "Text"],
+Cell[528703, 8796, 293, 7, 49, "Input"],
+Cell[528999, 8805, 773, 14, 68, "Text"],
+Cell[529775, 8821, 498, 13, 47, "Input"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[533956, 8943, 385, 7, 52, "Subchapter"],
-Cell[534344, 8952, 1470, 24, 143, "Text"]
-}, Closed]]
+Cell[530310, 8839, 353, 6, 55, "Subchapter"],
+Cell[530666, 8847, 509, 10, 49, "Text"],
+Cell[531178, 8859, 390, 8, 47, "Input"],
+Cell[531571, 8869, 339, 7, 30, "Text"],
+Cell[531913, 8878, 317, 6, 47, "Input"],
+Cell[532233, 8886, 320, 6, 30, "Text"],
+Cell[532556, 8894, 418, 10, 47, "Input"],
+Cell[532977, 8906, 750, 13, 49, "Text"],
+Cell[533730, 8921, 967, 25, 108, "Input"],
+Cell[534700, 8948, 280, 5, 30, "Text"]
 }, Open  ]],
-Cell[535841, 8980, 270, 4, 77, "Chapter"],
-Cell[536114, 8986, 266, 4, 66, "Chapter"],
-Cell[536383, 8992, 264, 4, 66, "Chapter"]
+Cell[CellGroupData[{
+Cell[535017, 8958, 385, 7, 71, "Subchapter"],
+Cell[535405, 8967, 713, 12, 49, "Text"],
+Cell[536121, 8981, 409, 10, 73, "Input"],
+Cell[536533, 8993, 239, 4, 30, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[536799, 9001, 270, 4, 80, "Chapter"],
+Cell[537072, 9007, 266, 4, 69, "Chapter"],
+Cell[537341, 9013, 264, 4, 69, "Chapter"]
 }, Open  ]]
 }
 ]
 *)
 
-(* End of internal cache information *)
